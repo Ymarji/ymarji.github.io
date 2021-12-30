@@ -186,26 +186,30 @@ footer [class*="fa-"]:hover {
 
 /* projrct section style */
 
-#projects {
+#projects , #about-me{
   padding: 4rem 1rem;
 }
 
 .section-blue{
   background-color: #2C3540;
 }
-#projects h2{
+#projects h2,
+#about-me h2{
   font-size: 2.5rem;
   margin-bottom: calc(2.5rem * 1.5); 
 }
-#projects h3{
+#projects h3,
+#about-me h3{
    font-family: var(--Volk);
    color: var(--p-blue);
 }
-#projects h4{
+#projects h4,
+#about-me h4{
   font-weight: normal;
   font-size: 90%;
 }
-#projects .blackBox{
+#projects .blackBox
+,#about-me .blackBox{
   padding: 1rem;
   color: var(--white);
   font-size: 80%;
@@ -214,7 +218,8 @@ footer [class*="fa-"]:hover {
   background-color: var(--p-black);
 }
 
-#projects ul{
+#projects ul,
+#about-me ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -226,7 +231,8 @@ footer [class*="fa-"]:hover {
   font-size: 80%;
 }
 
-#projects img{
+#projects img,
+#about-me img{
   width: 100%;
   border-radius: 15px;
   border-left: 1px solid var(--orange);
@@ -265,12 +271,19 @@ footer {
 }
 
 @media (min-width: 850px) {
-  #projects article{
+  #projects,
+  #about-me{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #projects article,
+  #about-me article{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 1rem;
   }
-  #projects img{
+  #projects img,
+  #about-me img{
     grid-column: 1/6;
     grid-row: 1/2;
   }
@@ -280,7 +293,8 @@ footer {
     order: 2;
     text-align: right;
   }
-  #projects ul{
+  #projects ul,
+  #about-me ul{
     justify-content: flex-end;
   }
   #projects .reverse img{
